@@ -51,10 +51,9 @@ addButton.addEventListener('click' ,  e=>{
 })
 
 function CardTemplate(price , productName , linkPhoto ,id){
-    const card = base.map({price,productName,linkPhoto})
     return`
         <div class="mainCard">
-            <div class="cardImage">
+            <div class="cardImage" id="${id}">
                 <img src="${linkPhoto}" alt="">
             </div>
             <div class="cardBody">
